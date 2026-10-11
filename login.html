@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Access your FABTEX account." />
+    <meta name="theme-color" content="#101112" />
+    <meta property="og:title" content="Login — FABTEX" />
+    <meta property="og:description" content="Access your FABTEX account." />
+    <meta property="og:type" content="website" />
+    <title>Login — FABTEX</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="top-links">
+          <a href="#">Public Folder</a><a href="#">Project Tracker</a><a href="#">Shop Online</a><a href="#">Financing</a>
+        </div>
+        <div class="account-links"><a href="login.html">LOGIN</a><a href="register.html">REGISTER</a></div>
+      </div>
+    </div>
+
+    <header class="header solid">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html#home" aria-label="FABTEX home">
+          <span class="logo-image"><img src="images/logo-gold.png" alt="FABTEX" width="88" height="58" /></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main navigation">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#products">Collections</a>
+          <a href="index.html#advantage">Advantage</a>
+          <a href="index.html#solutions">Solutions</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="login.html" class="nav-account">Login / Register</a>
+          <a href="index.html#contact" class="nav-cta">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="auth">
+      <aside class="auth-visual" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85');">
+        <div class="auth-visual-inner">
+          <p class="eyebrow">FABTEX Account</p>
+          <h2>Premium fabrics.<br /><span>Effortless projects.</span></h2>
+          <ul class="auth-perks">
+            <li><i class="fa-solid fa-folder-open"></i>Access resources and specification files</li>
+            <li><i class="fa-solid fa-chart-line"></i>Follow your project progress</li>
+            <li><i class="fa-solid fa-box-open"></i>Request samples and quotes faster</li>
+          </ul>
+        </div>
+      </aside>
+      <section class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-tabs"><a href="login.html" class="active">LOGIN</a><a href="register.html">REGISTER</a></div>
+          <h1>Welcome back</h1>
+          <p class="auth-sub">Sign in to continue to your FABTEX account.</p>
+          <div class="auth-notice" role="status" hidden></div>
+          <form class="auth-form" id="login-form" novalidate>
+            <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required /><span class="error" aria-live="polite"></span></div>
+            <div class="field"><label for="l-pass">Password</label>
+              <div class="pw-wrap"><input id="l-pass" name="password" type="password" autocomplete="current-password" placeholder="Your password" required /><button class="pw-toggle" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div>
+              <span class="error" aria-live="polite"></span></div>
+            <div class="auth-row">
+              <label class="check"><input type="checkbox" name="remember" /> Remember me</label>
+              <a class="auth-link" id="forgot-link" href="#">Forgot password?</a>
+            </div>
+            <button class="btn btn-orange auth-submit" type="submit">LOGIN <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <p class="auth-alt">New to FABTEX? <a class="auth-link" href="register.html">Create an account</a></p>
+          <p class="demo-note">Demo mode: accounts are saved only in this browser until a server is connected.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html#home" aria-label="FABTEX home"><span class="logo-image"><img src="images/logo-gold.png" alt="FABTEX" width="106" height="70" loading="lazy" /></span></a>
+          <p>Premium fabric and textile solutions for hospitality, healthcare and corporate interiors.</p>
+          <div class="socials">
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>SITEMAP</h4>
+          <a href="index.html#home">Home</a><a href="index.html#advantage">Advantage</a><a href="index.html#solutions">Solutions</a><a href="index.html#projects">Projects</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a>
+        </div>
+        <div>
+          <h4>PRODUCTS</h4>
+          <a href="index.html#products">Draperies</a><a href="index.html#products">Bedding</a><a href="index.html#products">Window Blinds</a><a href="index.html#products">Blackouts</a><a href="index.html#products">Sheers</a>
+        </div>
+        <div class="footer-contact">
+          <h4>CONTACT US</h4>
+          <p>📍 1100 Business Lane<br />Dallas, TX 75201, USA</p>
+          <p>☎ <a href="tel:+18007772191">+1 (800) 777-2191</a></p>
+          <p>✉ <a href="mailto:hello@fabtex.example">hello@fabtex.example</a></p>
+          <p>🕘 Mon–Fri, 8:00 AM–5:00 PM</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <span>© <span id="year">2026</span> FABTEX. All rights reserved.</span>
+          <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+          <span>Designed with care.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
